@@ -23,11 +23,23 @@ entryPoint = document.querySelector(".cards-container")
 
 axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
 .then(response=>{
-console.log(response)
-response.data.articles.forEach(item=>{
-    newArticle = articleCreater(item);
+console.log("I am the response from axios call", response)
+
+for(let i= 0; i<response.data.articles; i++){
+    response.data.articles.forEach(item =>{
+       response.data.articles.forEach(item =>{
+       console.log(item)
+    // newArticle = articleCreater(item);
+    // entrypoint.append.newArticle
 
 })
+        newArticle = articleCreater(item);
+        entrypoint.append.newArticle
+    
+    }) 
+
+}
+
     
 })
 .catch(error => {

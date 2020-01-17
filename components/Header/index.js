@@ -9,6 +9,13 @@
 //  </div >
 // And add it to the DOM in the .header-container component
 
+
+// grab the header container and append header to it
+
+    const headerContainer = document.querySelector(".header-container");
+
+    headerContainer.append(Header());
+
 function Header() {
 
     //create the elements--
@@ -34,11 +41,12 @@ function Header() {
      subInfo.textContent = "98°";
      
      //grab the header container and append header to it
-    const headerContainer = document.querySelector(".header-container");
 
-    headerContainer.append(header);
+    // const headerContainer = document.querySelector(".header-container");
+
+    // headerContainer.append(header);
      
-     return Header
+     return header
   
 
 
