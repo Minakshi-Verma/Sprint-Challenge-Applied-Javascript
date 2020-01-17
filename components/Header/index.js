@@ -36,7 +36,7 @@ function Header() {
      subInfo.classList.add("temp");
 
      //add textContent-----
-     date.textContent = "SMARCH 28, 2019";
+     date.textContent = "MARCH 28, 2019";
      heading.textContent = "Lambda Times";
      subInfo.textContent = "98°";
      
